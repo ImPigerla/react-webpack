@@ -1,0 +1,19 @@
+// name = fade
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .2s ease-out;
+}
+
+.fade-enter, .fade-leave-active {
+  opacity: 0
+}
+
+// slide-left
+.slide-left-enter, .slide-right-leave-active {
+  opacity: 0;
+  transform: translate(30px, 0)
+}
+
+.slide-left-leave-active, .slide-right-enter {
+  opacity: 0;
+  transform: translate(-30px, 0)
+}

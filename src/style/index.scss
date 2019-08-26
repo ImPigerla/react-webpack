@@ -1,0 +1,7 @@
+// 这里全局样式统一出口，不建议把零售的样式写在下面，
+// 而是整合以下文件或者新增文件，再import进来。
+@import "base/normalize";
+@import "base/utilities";
+@import "base/transitions";
+@import "page/common";
+@import "page/form-beauty";

@@ -1,0 +1,29 @@
+body {
+  > main {
+    height: 100%;
+  }
+
+  .app-content {
+    .page-container {
+      padding: 16px !important;
+    }
+  }
+}
+
+@for $i from 1 to 4 {
+  h#{$i}, .h#{$i} {
+    font-size: $font-size-base * (2 - 0.2 * $i);
+    line-height: (2 - 0.2 * $i);
+    font-weight: 400;
+    + p {
+      padding: 5px 0 (20px - 2 * $i);
+      color: $text-color-secondary;
+    }
+  }
+}
+
+.label-line-height {
+  > label {
+    line-height: 1.5;
+  }
+}

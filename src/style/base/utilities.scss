@@ -1,0 +1,158 @@
+//
+// Utility classes
+// --------------------------------------------------
+
+.clearfix {
+  @include clearfix;
+}
+
+.pull-right {
+  float: right !important;
+}
+
+.pull-left {
+  float: left !important;
+}
+
+// text
+// ---------------------
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-link {
+  color: $text-color;
+  &:hover {
+    color: $text-color;
+  }
+}
+
+.inherit-link {
+  color: inherit;
+  &:hover {
+    color: inherit;
+  }
+}
+
+// ------------------------------------------
+
+.color-primary {
+  color: $color-primary;
+}
+
+.color-success {
+  color: $color-success;
+}
+
+.color-warning {
+  color: $color-warning;
+}
+
+.color-danger {
+  color: $color-danger;
+}
+
+.color-info {
+  color: $color-info;
+}
+
+.color-purple {
+  color: $color-purple;
+}
+
+.color-alert {
+  color: $color-info-2;
+}
+
+.text-color-third {
+  color: $text-color-third;
+}
+
+.text-color-secondary {
+  color: $text-color-secondary;
+}
+
+// ---------------------------------------
+.block {
+  display: block !important;
+}
+
+.hide {
+  display: none !important;
+}
+
+.auto-width {
+  width: auto !important;
+}
+
+.v-middle {
+  vertical-align: middle;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+  &-vertical {
+    @extend .flex;
+    align-items: center;
+  }
+  &-horizontal {
+    @extend .flex;
+    justify-content: center;
+  }
+  &-space-between {
+    @extend .flex;
+    justify-content: space-between;
+  }
+}
+
+.pre-wrap {
+  white-space: pre-wrap;
+}
+
+.no-wrap {
+  white-space: nowrap;
+}
+
+// margin & padding gap
+$step: 5;
+
+@for $i from 1 to 7 {
+  $value: $step * $i;
+
+  .mt-#{$value} {
+    margin-top: $value + px;
+  }
+  .mr-#{$value} {
+    margin-right: $value + px;
+  }
+  .mb-#{$value} {
+    margin-bottom: $value + px;
+  }
+  .ml-#{$value} {
+    margin-left: $value + px;
+  }
+  .pt-#{$value} {
+    padding-top: $value + px;
+  }
+  .pr-#{$value} {
+    padding-right: $value + px;
+  }
+  .pb-#{$value} {
+    padding-bottom: $value + px;
+  }
+  .pl-#{$value} {
+    padding-left: $value + px;
+  }
+}

@@ -1,0 +1,26 @@
+// form 美化或者与dialog适配
+.form-beauty {
+    padding-right : 50px;
+    .el-select, .el-cascader{
+        display : block;
+    }
+
+  .letter-count {
+    .el-input-group__append {
+      padding: 0 7px;
+    }
+    .count-area {
+      line-height: 1.5;
+      float: right;
+    }
+  }
+}
+
+// 原生表格美化
+.table-beauty {
+    border : 1px solid $border-color;
+    td, th {
+        border  : 1px solid $border-color;
+        padding : 6px 12px;
+    }
+}
